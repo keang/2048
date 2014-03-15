@@ -107,7 +107,6 @@ GameManager.prototype.move = function (direction) {
   if (this.isGameTerminated()) return; // Don't do anything if the game's over
 
   var cell, tile;
-  console.log("direction is " + direction);
   var vector     = this.getVector(direction);
   var traversals = this.buildTraversals(vector);
   var moved      = false;
@@ -246,7 +245,6 @@ GameManager.prototype.positionsEqual = function (first, second) {
 
 GameManager.prototype.executeMove = function(directions){
   gm = this;
-  console.log(directions);
   if(this.won || this.over) return;
   var delay = 200;
   for(var i=0; i<directions.length; i++){

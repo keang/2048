@@ -11,7 +11,7 @@ function getDirections(){
 	var dir = [];
 	for(var i=0; i<directions.length; i++){
 		dir[i] = parseInt(directions[i])-1; 
-		console.log(dir[i])//convert to 1, 2, 3, 4
+		//console.log(dir[i])//convert to 1, 2, 3, 4
 	}
 	return dir;
 }
