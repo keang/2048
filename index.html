@@ -28,9 +28,19 @@
       </div>
     </div>
     <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-
+    <br>
+    <p class="game-intro">Key in numbers to make an intern press the directions for you in loops: 
+      <ul>
+        <li><strong>1</strong> for Up</li>
+        <li><strong>2</strong> for Right</li>
+        <li><strong>3</strong> for Down</li>
+        <li><strong>4</strong> for Left</li>
+      </ul>
+      For example: "123234"
+    </p>
     <input type="text" id="code">
-    <button onclick="runCode()">Run</button>
+    <button onclick="runCode()" class="commandButton">Run</button>
+    <button onclick="stopCode()" class="commandButton">Stop</button>
     <div class="game-container">
       <div class="game-message">
         <p></p>
