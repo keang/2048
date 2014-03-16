@@ -10,7 +10,14 @@ function getDirections(){
 	var directions = code.split("");
 	var dir = [];
 	for(var i=0; i<directions.length; i++){
-		dir[i] = parseInt(directions[i])-1; 
+		if(directions[i]=='u')
+			dir[i] = 1;
+		else if (directions[i]=='r')
+			dir[i] = 2;
+		else if (directions[i]=='d')
+			dir[i] = 3;
+		else if (directions[i]=='l')
+			dir[i] = 4;
 		//console.log(dir[i])//convert to 1, 2, 3, 4
 	}
 	return dir;
