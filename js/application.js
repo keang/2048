@@ -11,13 +11,13 @@ function getDirections(){
 	var dir = [];
 	for(var i=0; i<directions.length; i++){
 		if(directions[i]=='u')
-			dir[i] = 1;
+			dir[i] = 0;
 		else if (directions[i]=='r')
-			dir[i] = 2;
+			dir[i] = 1;
 		else if (directions[i]=='d')
-			dir[i] = 3;
+			dir[i] = 2;
 		else if (directions[i]=='l')
-			dir[i] = 4;
+			dir[i] = 3;
 		//console.log(dir[i])//convert to 1, 2, 3, 4
 	}
 	return dir;
